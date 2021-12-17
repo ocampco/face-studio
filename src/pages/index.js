@@ -8,19 +8,26 @@ const Hero = styled.section`
   display: grid;
   justify-content: center;
   align-content: center;
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
 `;
 
 const HeroHeading = styled.h1`
   font-size: 4rem;
-  font-weight: 600;
-  color: ${colors.white};
   margin-bottom: 1.5rem;
 `;
 
 const HeroSubHeading = styled.address`
-  font-size: 1.5rem;
-  color: ${colors.white};
+  letter-spacing: 0.125rem;
+  margin-bottom: 2rem;
+  color: ${colors.darkGrey};
+`;
+  
+const EnquiryLink = styled.div`
+  padding: 1rem 1.5rem;
+  background-color: ${colors.white};
+  border-radius: 0.5rem;
+  justify-self: center;
+  box-shadow: rgb(0 0 0 / 20%) 0px 0.0625rem 0.1875rem 0px;
 `;
 
 const Background = styled.section`
@@ -28,14 +35,14 @@ const Background = styled.section`
 `;
 
 const BackgroundHeading = styled.h2`
-  font-size: 1.5rem;
   margin-bottom: 1.5rem;
 `;
 
 const ListItem = styled.li`
   font-size: 1.5rem;
+  letter-spacing: 0.125rem;
   font-weight: 300;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   color: ${colors.black};
 `;
 
@@ -44,6 +51,7 @@ const IndexPage = () => (
     <Hero>
       <HeroHeading>Face Studio<br />By Annie</HeroHeading>
       <HeroSubHeading>Mildura, VIC</HeroSubHeading>
+      <EnquiryLink>Check availability</EnquiryLink>
     </Hero>
     <Background>
       <BackgroundHeading id="about">About</BackgroundHeading>
@@ -51,7 +59,7 @@ const IndexPage = () => (
         <ListItem>9 years experience,</ListItem>
         <ListItem>Certified make up artist,</ListItem>
         <ListItem>Certified brow technician,</ListItem>
-        <ListItem>Face aesthetics specialist.</ListItem>
+        <ListItem>Face aesthetics specialist</ListItem>
       </ul>
     </Background>
   </main>
