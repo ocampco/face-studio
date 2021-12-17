@@ -1,6 +1,7 @@
 module.exports = {
+  pathPrefix: "/face-studio",
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://ocampco.github.io/face-studio/",
     title: "face-studio",
   },
   plugins: [
