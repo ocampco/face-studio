@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import { colors } from './../styles/variables';
 
 const Section = styled.section`
-  padding: 2rem 1rem;
+  padding: 2rem 0;
+  border-bottom: 0.125rem solid ${colors.lightGrey};
 `;
 
 const Heading = styled.h2`

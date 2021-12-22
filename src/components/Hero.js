@@ -7,7 +7,7 @@ const Section = styled.section`
   display: grid;
   justify-content: center;
   align-content: center;
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem;
 `;
 
 const Heading = styled.h1`
