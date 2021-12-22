@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import BookingButton from './BookingButton';
+import BookingLink from './BookingLink';
 import { colors } from './../styles/variables';
 
 const Section = styled.section`
@@ -27,7 +27,7 @@ const Hero = () => (
   <Section>
     <Heading>Face Studio<br />By Annie</Heading>
     <SubHeading>Mildura, VIC</SubHeading>
-    <BookingButton text="Check Availability" />
+    <BookingLink text="Check Availability" />
   </Section>
 );
 
