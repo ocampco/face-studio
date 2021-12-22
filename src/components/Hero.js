@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { colors } from './../styles/variables';
 
 const Section = styled.section`
-  background-color: ${colors.lightGreen};
+  background-color: ${colors.midGreen};
   display: grid;
   justify-content: center;
   align-content: center;
@@ -11,14 +11,15 @@ const Section = styled.section`
 `;
 
 const Heading = styled.h1`
+  color: ${colors.white};
   font-size: 4rem;
   margin-bottom: 1.5rem;
 `;
 
 const SubHeading = styled.address`
-  letter-spacing: 0.125rem;
-  margin-bottom: 2rem;
-  color: ${colors.darkGrey};
+  letter-spacing: 0.1rem;
+  margin-bottom: 3rem;
+  color: ${colors.white};
 `;
 
 const Link = styled.div`
@@ -26,7 +27,7 @@ const Link = styled.div`
   background-color: ${colors.white};
   border-radius: 0.5rem;
   justify-self: center;
-  box-shadow: rgb(0 0 0 / 20%) 0px 0.0625rem 0.1875rem 0px;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
 `;
 
 const Hero = () => (
