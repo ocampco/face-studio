@@ -13,7 +13,7 @@ const Heading = styled.h2`
 
 const List = styled.ul`
   position: relative;
-  max-height: 10rem;
+  max-height: 14rem;
   overflow: hidden;
 
   &:after {
