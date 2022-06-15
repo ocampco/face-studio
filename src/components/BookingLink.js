@@ -4,15 +4,18 @@ import config from './../config';
 import { colors } from './../styles/variables';
 
 const Link = styled.div`
+  width: 100%;
+  text-align: center;
   background-color: ${colors.white};
   border-radius: 0.5rem;
-  justify-self: center;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
 `;
 
 const Anchor = styled.a`
   display: inline-block;
   padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: ${colors.black};
 `;
 
 const BookingLink = ({ text }) => (
