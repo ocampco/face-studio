@@ -23,10 +23,11 @@ const About = () => (
   <Section>
     <Heading id="about">About</Heading>
     <ul>
-      <ListItem>9 years experience,</ListItem>
+      <ListItem>Face aesthetics specialist with</ListItem>
+      <ListItem>10 years experience,</ListItem>
       <ListItem>Certified make up artist,</ListItem>
-      <ListItem>Certified brow technician,</ListItem>
-      <ListItem>Face aesthetics specialist</ListItem>
+      <ListItem>Certified lash and brow technician,</ListItem>
+      <ListItem>Certified lash extension technician</ListItem>
     </ul>
   </Section>
 );
