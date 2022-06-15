@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import BookingLink from './BookingLink';
 import { colors } from './../styles/variables';
 
 const Section = styled.section`
@@ -8,6 +9,23 @@ const Section = styled.section`
 
 const Heading = styled.h2`
   margin-bottom: 1.5rem;
+`;
+
+const List = styled.ul`
+  position: relative;
+  max-height: 10rem;
+  overflow: hidden;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 10rem;
+    background: linear-gradient(to top, ${colors.white}, rgba(0, 0, 0, 0));
+  }
 `;
 
 const ListItem = styled.li`
@@ -22,7 +40,7 @@ const ListItem = styled.li`
 const Services = () => (
   <Section>
     <Heading id="Services">Services</Heading>
-    <ul>
+    <List>
       <ListItem>Full lash treatment</ListItem>
       <ListItem>Lash tint</ListItem>
       <ListItem>Lash lift</ListItem>
@@ -40,7 +58,8 @@ const Services = () => (
       <ListItem>Brow wax</ListItem>
       <ListItem>Brow tint</ListItem>
       <ListItem>Brow lamination</ListItem>
-    </ul>
+    </List>
+    <BookingLink text="Check Availability" />
   </Section>
 );
 
