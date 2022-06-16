@@ -12,8 +12,8 @@ const Link = styled.div`
 `;
 
 const Anchor = styled.a`
-  display: inline-block;
-  padding: 1rem 1.5rem;
+  display: block;
+  padding: 1rem 0;
   text-decoration: none;
   color: ${colors.black};
   letter-spacing: 1px;
