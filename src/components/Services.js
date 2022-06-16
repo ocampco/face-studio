@@ -59,7 +59,7 @@ const Services = () => (
       <ListItem>Brow tint</ListItem>
       <ListItem>Brow lamination</ListItem>
     </List>
-    <BookingLink text="See all" />
+    <BookingLink text="See all services" />
   </Section>
 );
 
