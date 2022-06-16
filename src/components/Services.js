@@ -31,8 +31,8 @@ const List = styled.ul`
 const ListItem = styled.li`
   list-style: disc inside;
   font-size: 1.25rem;
-  letter-spacing: 0.125rem;
-  font-weight: 300;
+  letter-spacing: 1px;
+  font-weight: 400;
   margin-bottom: 0.75rem;
   color: ${colors.black};
 `;
@@ -59,7 +59,7 @@ const Services = () => (
       <ListItem>Brow tint</ListItem>
       <ListItem>Brow lamination</ListItem>
     </List>
-    <BookingLink text="Check Availability" />
+    <BookingLink text="See all" />
   </Section>
 );
 

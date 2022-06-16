@@ -1,9 +1,13 @@
 * {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
-h1, h2 {
-    font-weight: 600;
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 500;
 }
 
 h2 {

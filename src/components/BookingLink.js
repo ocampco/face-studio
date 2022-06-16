@@ -16,6 +16,9 @@ const Anchor = styled.a`
   padding: 1rem 1.5rem;
   text-decoration: none;
   color: ${colors.black};
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+  font-weight: 500;
 `;
 
 const BookingLink = ({ text }) => (

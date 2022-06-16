@@ -18,7 +18,7 @@ const Heading = styled.h1`
 `;
 
 const SubHeading = styled.address`
-  letter-spacing: 0.1rem;
+  letter-spacing: 1px;
   margin-bottom: 3rem;
   color: ${colors.white};
 `;

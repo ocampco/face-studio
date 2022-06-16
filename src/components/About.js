@@ -13,8 +13,8 @@ const Heading = styled.h2`
 
 const ListItem = styled.li`
   font-size: 1.25rem;
-  letter-spacing: 0.125rem;
-  font-weight: 300;
+  letter-spacing: 1px;
+  font-weight: 400;
   margin-bottom: 0.75rem;
   color: ${colors.black};
 `;
