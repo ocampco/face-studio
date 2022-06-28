@@ -9,7 +9,7 @@ const Container = styled.div`
   text-align: center;
   background-color: ${colors.white};
   border-radius: 0.5rem;
-  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+  border: 1px solid ${colors.black};
 `;
 
 const Anchor = styled.a`
