@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import BookingLink from './BookingLink';
+import { BookingLink } from './Link';
 import { colors } from './../styles/variables';
 
 const Section = styled.section`
@@ -16,6 +16,7 @@ const List = styled.ul`
   position: relative;
   max-height: 14rem;
   overflow: hidden;
+  margin-bottom: 1rem;
 
   &:after {
     content: '';
@@ -62,9 +63,11 @@ const Services = () => (
   <Section>
     <Heading id="Services">Services</Heading>
     <List>
-      { services.map(service => (<ListItem>{service}</ListItem>))}
+      { services.map(
+          service => (<ListItem key={service}>{service}</ListItem>))
+      }
     </List>
-    <BookingLink text="See all services" />
+    <BookingLink width="100%" text="See all services" />
   </Section>
 );
 

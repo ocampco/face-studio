@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
-import BookingLink from './BookingLink';
+import { SocialLink } from './Link';
 import { colors } from './../styles/variables';
 
 const Section = styled.section`
@@ -44,7 +44,7 @@ const Contact = () => (
     </Avatar>
     <Card>
       <Username>facestudiobyannie</Username>
-      <BookingLink text="View on Instagram" />
+      <SocialLink  text="View on Instagram" />
     </Card>
   </Section>
 );

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import BookingLink from './BookingLink';
+import { BookingLink } from './Link';
 import { colors } from './../styles/variables';
 
 const Section = styled.section`
