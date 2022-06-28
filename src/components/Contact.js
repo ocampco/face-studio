@@ -12,22 +12,26 @@ const Heading = styled.h2`
   margin-bottom: 1.5rem;
 `;
 
-const Username = styled.h3`
-  margin-bottom: 0.75rem;
+const Card = styled.div`
+  display: flex;
 `;
 
 const Avatar = styled.div`
-  float: left;
   width: 5rem;
   margin-right: 1rem;
   overflow: hidden;
   border-radius: 50%;
 `;
 
-const Card = styled.div`
+const Info = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+`;
+
+const Username = styled.h3`
   font-size: 1.25rem;
   letter-spacing: 1px;
-  font-weight: 400;
   margin-bottom: 0.75rem;
   color: ${colors.black};
 `;
@@ -35,16 +39,18 @@ const Card = styled.div`
 const Contact = () => (
   <Section>
     <Heading id="Contact">Contact me</Heading>
-    <Avatar>
-      <StaticImage
-        src="./../images/avatar.jpg"
-        alt="Annie"
-        placeholder="blurred"
-      />
-    </Avatar>
     <Card>
-      <Username>facestudiobyannie</Username>
-      <SocialLink  text="View on Instagram" />
+      <Avatar>
+        <StaticImage
+          src="./../images/avatar.jpg"
+          alt="Annie"
+          placeholder="blurred"
+        />
+      </Avatar>
+      <Info>
+        <Username>facestudiobyannie</Username>
+        <SocialLink text="View on Instagram" width="100%" />
+      </Info>
     </Card>
   </Section>
 );
