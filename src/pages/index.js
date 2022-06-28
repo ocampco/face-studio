@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import Hero from './../components/Hero';
 import About from './../components/About';
 import Services from './../components/Services';
+import Contact from './../components/Contact';
 import './../styles/index.css';
 
 const Content = styled.div`
@@ -18,6 +19,7 @@ const IndexPage = () => (
     <Content>
       <About />
       <Services />
+      <Contact />
     </Content>
   </main>
 );
