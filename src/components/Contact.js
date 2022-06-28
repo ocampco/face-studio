@@ -20,6 +20,7 @@ const Avatar = styled.div`
   width: 5rem;
   margin-right: 1rem;
   overflow: hidden;
+  flex-basis: fit-content;
   border-radius: 50%;
 `;
 
@@ -32,7 +33,7 @@ const Info = styled.div`
 const Username = styled.h3`
   font-size: 1.25rem;
   letter-spacing: 1px;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   color: ${colors.black};
 `;
 
