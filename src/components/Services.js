@@ -37,27 +37,31 @@ const ListItem = styled.li`
   color: ${colors.black};
 `;
 
+const services = [
+  'Full lash treatment',
+  'Lash tint',
+  'Lash lift',
+  'Full face wax',
+  'Chin wax',
+  'Lip wax',
+  'Make up',
+  'Special FX make up',
+  'Full set of classic lashes',
+  'Classic lashes refill',
+  'Full set of hybrid lashes',
+  'Hybrid lashes refill',
+  'Full brow treatment',
+  'Brow wax and shape',
+  'Brow wax',
+  'Brow tint',
+  'Brow lamination',
+];
+
 const Services = () => (
   <Section>
     <Heading id="Services">Services</Heading>
     <List>
-      <ListItem>Full lash treatment</ListItem>
-      <ListItem>Lash tint</ListItem>
-      <ListItem>Lash lift</ListItem>
-      <ListItem>Full face wax</ListItem>
-      <ListItem>Chin wax</ListItem>
-      <ListItem>Lip wax</ListItem>
-      <ListItem>Make up</ListItem>
-      <ListItem>Special FX make up</ListItem>
-      <ListItem>Full set of classic lashes</ListItem>
-      <ListItem>Classic lashes refill</ListItem>
-      <ListItem>Full set of hybrid lashes</ListItem>
-      <ListItem>Hybrid lashes refill</ListItem>
-      <ListItem>Full brow treatment</ListItem>
-      <ListItem>Brow wax and shape</ListItem>
-      <ListItem>Brow wax</ListItem>
-      <ListItem>Brow tint</ListItem>
-      <ListItem>Brow lamination</ListItem>
+      { services.map(service => (<ListItem>{service}</ListItem>))}
     </List>
     <BookingLink text="See all services" />
   </Section>
