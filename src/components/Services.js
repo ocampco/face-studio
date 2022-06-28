@@ -14,7 +14,7 @@ const Heading = styled.h2`
 
 const List = styled.ul`
   position: relative;
-  max-height: 14rem;
+  max-height: 10rem;
   overflow: hidden;
   margin-bottom: 1rem;
 
@@ -40,23 +40,26 @@ const ListItem = styled.li`
 `;
 
 const services = [
-  'Full lash treatment',
-  'Lash tint',
-  'Lash lift',
-  'Full face wax',
-  'Chin wax',
-  'Lip wax',
-  'Make up',
-  'Special FX make up',
-  'Full set of classic lashes',
-  'Classic lashes refill',
-  'Full set of hybrid lashes',
-  'Hybrid lashes refill',
-  'Full brow treatment',
-  'Brow wax and shape',
-  'Brow wax',
-  'Brow tint',
-  'Brow lamination',
+  'Lash Set Full',
+  'Brow Lamination',
+  'Make Up Application',
+  'Facial Services',
+  'Full Lash Treatment',
+  'Lash Tint',
+  'Lash Lift',
+  'Wax Full Face',
+  'Wax Brow',
+  'Wax Chin',
+  'Wax Lip',
+  'Dermaplane',
+  'Brow Wax and Shape',
+  'Brow Tint',
+  'Full Brow Treatment',
+  'SPFX Make Up Application',
+  'Lash Extension Refill 1 Week',
+  'Lash Extension Refill 2 Weeks',
+  'Lash Extension Refill 3 Weeks',
+  'Lash Removal',
 ];
 
 const Services = () => (
