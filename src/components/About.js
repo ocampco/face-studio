@@ -2,24 +2,25 @@ import React from 'react';
 import styled from 'styled-components';
 import { colors } from './../styles/variables';
 
-const ListItem = styled.li`
+const Content = styled.div`
   font-size: 1.25rem;
-  letter-spacing: 1px;
   font-weight: 400;
-  margin-bottom: 0.75rem;
+  line-height: 1.75;
   color: ${colors.black};
 `;
 
 const About = () => (
   <section>
     <h2 id="about">About</h2>
-    <ul>
-      <ListItem>Face aesthetics specialist with</ListItem>
-      <ListItem>10 years experience,</ListItem>
-      <ListItem>Certified make up artist,</ListItem>
-      <ListItem>Certified lash and brow technician,</ListItem>
-      <ListItem>Certified lash extension technician</ListItem>
-    </ul>
+    <Content>
+      I'm a face aesthetics specialist with over 10 years experience.
+      <br />I am certified as a:
+      <ul>
+        <li>Make up artist</li>
+        <li>Lash and brow technician</li>
+        <li>Lash extension technician</li>
+      </ul>
+    </Content>
   </section>
 );
 
