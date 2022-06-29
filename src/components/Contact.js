@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
 import { SocialLink } from './Link';
-import { colors } from './../styles/variables';
 
 const Card = styled.div`
   display: flex;
@@ -19,14 +18,8 @@ const Avatar = styled.div`
 const Info = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   width: 100%;
-`;
-
-const Username = styled.h3`
-  font-size: 1.25rem;
-  letter-spacing: 1px;
-  margin-bottom: 1rem;
-  color: ${colors.black};
 `;
 
 const Contact = () => (
@@ -41,8 +34,8 @@ const Contact = () => (
         />
       </Avatar>
       <Info>
-        <Username>facestudiobyannie</Username>
-        <SocialLink text="View on Instagram" width="100%" />
+        <SocialLink text="Instagram" width="100%" />
+        <SocialLink text="Facebook" width="100%" />
       </Info>
     </Card>
   </section>
