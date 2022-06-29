@@ -22,7 +22,6 @@ const List = styled.ul`
 `;
 
 const ListItem = styled.li`
-  list-style: disc inside;
   font-size: 1.25rem;
   letter-spacing: 1px;
   font-weight: 400;
@@ -55,7 +54,7 @@ const services = [
 
 const Services = () => (
   <section>
-    <h2 id="Services">Services</h2>
+    <h2 id="Services and Pricing">Services &amp; Pricing</h2>
     <List>
       { services.map(
           service => (<ListItem key={service}>{service}</ListItem>))

@@ -25,3 +25,7 @@ section {
 section:first-of-type {
   border-bottom: none;
 }
+
+li {
+  list-style: disc inside;
+}
