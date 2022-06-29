@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
-import { BookingLink } from './Link';
 import { colors } from './../styles/variables';
 
 const Heading = styled.h1`
@@ -11,6 +10,13 @@ const Heading = styled.h1`
 const Card = styled.div`
   display: flex;
   margin-bottom: 1.5rem;
+`;
+
+const Avatar = styled.div`
+  width: 5rem;
+  margin-right: 1rem;
+  overflow: hidden;
+  border-radius: 50%;
 `;
 
 const Info = styled.div`
@@ -24,11 +30,10 @@ const Location = styled.address`
   color: ${colors.darkGrey};
 `;
 
-const Avatar = styled.div`
-  width: 5rem;
-  margin-right: 1rem;
+const HeroImage = styled.div`
+  border-radius: 2rem;
   overflow: hidden;
-  border-radius: 50%;
+  margin-bottom: 1.5rem;
 `;
 
 const Hero = () => (
@@ -47,12 +52,13 @@ const Hero = () => (
         <Location>Mildura, VIC</Location>
       </Info>
     </Card>
-    <StaticImage
-      src="./../images/hero1.jpg"
-      alt="Eyelash and brow treatment"
-      placeholder="blurred"
-    />
-    <BookingLink text="Check Availability" />
+    <HeroImage>
+      <StaticImage
+        src="./../images/hero1.jpg"
+        alt="Eyelash and brow treatment"
+        placeholder="blurred"
+      />
+    </HeroImage>
   </section>
 );
 
