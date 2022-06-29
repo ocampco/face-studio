@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
-import { SocialLink } from './Link';
+import { InstagramLink, FacebookLink } from './Link';
 
 const Card = styled.div`
   display: flex;
@@ -34,8 +34,8 @@ const Contact = () => (
         />
       </Avatar>
       <Info>
-        <SocialLink text="Instagram" width="100%" />
-        <SocialLink text="Facebook" width="100%" />
+        <InstagramLink text="Instagram" width="100%" />
+        <FacebookLink text="Facebook" width="100%" />
       </Info>
     </Card>
   </section>

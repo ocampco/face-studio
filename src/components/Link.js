@@ -34,8 +34,11 @@ const Link = ({ text, url, width }) => (
   </Container>
 );
 
-export const SocialLink = ({ text }) =>
-  <Link text={text} url={config.SOCIAL_URL} />
+export const InstagramLink = ({ text }) =>
+  <Link text={text} url={config.IG_URL} />
+
+export const FacebookLink = ({ text }) =>
+  <Link text={text} url={config.FB_URL} />
 
 export const BookingLink = ({ text, width }) =>
   <Link text={text} url={config.BOOKING_URL} width={width} />
