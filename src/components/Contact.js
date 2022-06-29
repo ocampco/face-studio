@@ -8,18 +8,17 @@ const Card = styled.div`
 `;
 
 const Avatar = styled.div`
-  width: 5rem;
+  width: 8rem;
   margin-right: 1rem;
   overflow: hidden;
-  flex-basis: fit-content;
   border-radius: 50%;
 `;
 
+// Refactor button styling
 const Info = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 100%;
 `;
 
 const Contact = () => (
@@ -34,8 +33,8 @@ const Contact = () => (
         />
       </Avatar>
       <Info>
-        <InstagramLink text="Instagram" width="100%" />
-        <FacebookLink text="Facebook" width="100%" />
+        <InstagramLink text="Instagram" />
+        <FacebookLink text="Facebook" />
       </Info>
     </Card>
   </section>
