@@ -36,6 +36,7 @@ const HeroImage = styled.div`
   margin-bottom: 1.5rem;
 `;
 
+// TODO: Optimise assets
 const Hero = () => (
   <section>
     <Heading>Face Studio<br />By Annie</Heading>
