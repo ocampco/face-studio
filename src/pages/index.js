@@ -11,6 +11,8 @@ import './../styles/index.css';
 
 const Content = styled.main`
   padding: 0 1.5rem;
+  max-width: 720px;
+  margin: 0 auto;
 `;
 
 const IndexPage = () => (
