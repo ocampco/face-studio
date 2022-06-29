@@ -3,6 +3,10 @@ import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
 import { colors } from './../styles/variables';
 
+const Section = styled.section`
+  padding-bottom: 0;
+`;
+
 const Heading = styled.h1`
   margin-bottom: 1.5rem;
 `;
@@ -33,12 +37,11 @@ const Location = styled.address`
 const HeroImage = styled.div`
   border-radius: 2rem;
   overflow: hidden;
-  margin-bottom: 1.5rem;
 `;
 
 // TODO: Optimise assets
 const Hero = () => (
-  <section>
+  <Section>
     <Heading>Face Studio<br />By Annie</Heading>
     <Card>
       <Avatar>
@@ -60,7 +63,7 @@ const Hero = () => (
         placeholder="blurred"
       />
     </HeroImage>
-  </section>
+  </Section>
 );
 
 export default Hero;
