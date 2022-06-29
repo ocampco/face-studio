@@ -3,15 +3,6 @@ import styled from 'styled-components';
 import { BookingLink } from './Link';
 import { colors } from './../styles/variables';
 
-const Section = styled.section`
-  padding: 2rem 0;
-  border-bottom: 0.125rem solid ${colors.lightGrey};
-`;
-
-const Heading = styled.h2`
-  margin-bottom: 1.5rem;
-`;
-
 const List = styled.ul`
   position: relative;
   max-height: 10rem;
@@ -63,15 +54,15 @@ const services = [
 ];
 
 const Services = () => (
-  <Section>
-    <Heading id="Services">Services</Heading>
+  <section>
+    <h2 id="Services">Services</h2>
     <List>
       { services.map(
           service => (<ListItem key={service}>{service}</ListItem>))
       }
     </List>
     <BookingLink width="100%" text="See all services" />
-  </Section>
+  </section>
 );
 
 export default Services;

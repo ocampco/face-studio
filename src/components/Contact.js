@@ -4,14 +4,6 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { SocialLink } from './Link';
 import { colors } from './../styles/variables';
 
-const Section = styled.section`
-  padding: 2rem 0;
-`;
-
-const Heading = styled.h2`
-  margin-bottom: 1.5rem;
-`;
-
 const Card = styled.div`
   display: flex;
 `;
@@ -38,8 +30,8 @@ const Username = styled.h3`
 `;
 
 const Contact = () => (
-  <Section>
-    <Heading id="Contact">Contact me</Heading>
+  <section>
+    <h2 id="Contact">Contact me</h2>
     <Card>
       <Avatar>
         <StaticImage
@@ -53,7 +45,7 @@ const Contact = () => (
         <SocialLink text="View on Instagram" width="100%" />
       </Info>
     </Card>
-  </Section>
+  </section>
 );
 
 export default Contact;

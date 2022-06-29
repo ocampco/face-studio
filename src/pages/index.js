@@ -3,25 +3,23 @@ import '@fontsource/work-sans/500.css';
 import '@fontsource/work-sans/700.css';
 import React from 'react';
 import styled from 'styled-components';
-import Hero from './../components/Hero';
+import Hero from './../components/Hero2';
 import About from './../components/About';
 import Services from './../components/Services';
 import Contact from './../components/Contact';
 import './../styles/index.css';
 
-const Content = styled.div`
+const Content = styled.main`
   padding: 0 1.5rem;
 `;
 
 const IndexPage = () => (
-  <main>
+  <Content>
     <Hero />
-    <Content>
-      <About />
-      <Services />
-      <Contact />
-    </Content>
-  </main>
+    <About />
+    <Services />
+    <Contact />
+  </Content>
 );
 
 export default IndexPage;

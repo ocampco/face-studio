@@ -2,15 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { colors } from './../styles/variables';
 
-const Section = styled.section`
-  padding: 2rem 0;
-  border-bottom: 0.125rem solid ${colors.lightGrey};
-`;
-
-const Heading = styled.h2`
-  margin-bottom: 1.5rem;
-`;
-
 const ListItem = styled.li`
   font-size: 1.25rem;
   letter-spacing: 1px;
@@ -20,8 +11,8 @@ const ListItem = styled.li`
 `;
 
 const About = () => (
-  <Section>
-    <Heading id="about">About</Heading>
+  <section>
+    <h2 id="about">About</h2>
     <ul>
       <ListItem>Face aesthetics specialist with</ListItem>
       <ListItem>10 years experience,</ListItem>
@@ -29,7 +20,7 @@ const About = () => (
       <ListItem>Certified lash and brow technician,</ListItem>
       <ListItem>Certified lash extension technician</ListItem>
     </ul>
-  </Section>
+  </section>
 );
 
 export default About;
