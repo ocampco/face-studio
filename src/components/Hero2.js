@@ -17,7 +17,7 @@ const Card = styled.div`
 `;
 
 const Avatar = styled.div`
-  width: 5rem;
+  width: 6rem;
   margin-right: 1rem;
   overflow: hidden;
   border-radius: 50%;

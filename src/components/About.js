@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { colors } from './../styles/variables';
 
 const Content = styled.div`
-  font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.75;
   color: ${colors.black};

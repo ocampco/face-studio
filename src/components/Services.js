@@ -22,9 +22,6 @@ const List = styled.ul`
 `;
 
 const ListItem = styled.li`
-  font-size: 1.25rem;
-  letter-spacing: 1px;
-  font-weight: 400;
   margin-bottom: 0.75rem;
   color: ${colors.black};
 `;

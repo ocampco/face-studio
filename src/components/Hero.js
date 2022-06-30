@@ -13,7 +13,6 @@ const Section = styled.section`
 
 const Heading = styled.h1`
   color: ${colors.white};
-  font-size: 4rem;
   margin-bottom: 1.5rem;
 `;
 
