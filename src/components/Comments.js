@@ -5,7 +5,7 @@ import { colors } from '../styles/variables';
 
 const Card = styled.div`
   padding: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   border: 1px solid ${colors.lightGrey};
   border-radius: 0.5rem;
 `;

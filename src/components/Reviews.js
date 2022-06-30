@@ -3,10 +3,6 @@ import Comments from './Comments';
 import styled from 'styled-components';
 import config from '../config';
 
-const Cards = styled.div`
-  margin-bottom: 1.5rem;
-`;
-
 const Link = styled.a`
   font-weight: 500;
   margin-right: 0.25rem;
@@ -16,9 +12,7 @@ const Link = styled.a`
 const Reviews = () => (
   <section>
     <h2 id="Reviews">Reviews</h2>
-    <Cards>
-      <Comments />
-    </Cards>
+    <Comments />
     <Link
       href={config.FB_REVIEWS_URL}
       target="_blank"
