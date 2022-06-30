@@ -38,7 +38,7 @@ const Source = styled.a`
 `;
 
 const Comment = styled.div`
-  line-height: 1.75;
+  line-height: 1.5;
 `;
 
 // TODO: Use dynamic image

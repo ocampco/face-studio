@@ -4,7 +4,7 @@ import { colors } from './../styles/variables';
 
 const Content = styled.div`
   font-weight: 400;
-  line-height: 1.75;
+  line-height: 1.5;
   color: ${colors.black};
 `;
 
