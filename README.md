@@ -5,6 +5,7 @@
 
 ```bash
 # Install dependencies
+$ nvm use
 $ npm install
 
 # Run
