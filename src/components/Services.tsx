@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { BookingLink } from './Link';
 import { colors } from '../styles/variables';
