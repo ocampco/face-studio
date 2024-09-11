@@ -1,14 +1,14 @@
 # face-studio
 
-- [gatsby-starter-minimal](https://github.com/gatsbyjs/gatsby-starter-minimal)
+- [vite](https://vitejs.dev/)
 - [github-pages](https://ocampco.github.io/face-studio/)
 
 ```bash
 # Install dependencies
 $ nvm use
-$ npm install
+$ pnpm i
 
 # Run
-# Served at http://localhost:8000
-$ npm run develop
+# Served at http://localhost:5173/
+$ pnpm dev
 ```

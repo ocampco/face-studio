@@ -1,7 +1,6 @@
-import React from 'react';
 import styled from 'styled-components';
 import { BookingLink } from './Link';
-import { colors } from './../styles/variables';
+import { colors } from '../styles/variables';
 
 const Section = styled.section`
   background-color: ${colors.midGreen};

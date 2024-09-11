@@ -1,17 +1,16 @@
-import React from 'react';
 import styled from 'styled-components';
-import { StaticImage } from 'gatsby-plugin-image';
+import avatar from '../assets/avatar.jpg';
 import { InstagramLink, FacebookLink } from './Link';
 
 const Card = styled.div`
   display: flex;
 `;
 
-const Avatar = styled.div`
-  width: 8rem;
-  margin-right: 1rem;
-  overflow: hidden;
+const Avatar = styled.img`
+  height: 6rem;
+  width: 6rem;
   border-radius: 50%;
+  margin-right: 1rem;
 `;
 
 // Refactor button styling
@@ -25,13 +24,10 @@ const Contact = () => (
   <section>
     <h2 id="Contact">Contact me</h2>
     <Card>
-      <Avatar>
-        <StaticImage
-          src="./../images/avatar.jpg"
-          alt="Annie"
-          placeholder="blurred"
-        />
-      </Avatar>
+      <Avatar
+        src={avatar}
+        alt="Annie"
+      />
       <Info>
         <InstagramLink text="Instagram" />
         <FacebookLink text="Facebook" />

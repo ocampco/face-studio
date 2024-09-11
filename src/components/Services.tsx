@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { BookingLink } from './Link';
-import { colors } from './../styles/variables';
+import { colors } from '../styles/variables';
 
 const List = styled.ul`
   position: relative;

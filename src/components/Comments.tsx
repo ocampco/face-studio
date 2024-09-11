@@ -1,7 +1,8 @@
-import React from 'react';
 import styled from 'styled-components';
-import { StaticImage } from 'gatsby-plugin-image';
 import { colors } from '../styles/variables';
+import reviewMeg from '../assets/reviewMeg.jpg';
+import reviewPetra from '../assets/reviewPetra.jpg';
+import reviewWhitts from '../assets/reviewWhitts.jpg';
 
 const Card = styled.div`
   padding: 1.5rem;
@@ -15,11 +16,11 @@ const User = styled.div`
   margin-bottom: 1.5rem;
 `;
 
-const Avatar = styled.div`
-  width: 5rem;
-  margin-right: 1rem;
-  overflow: hidden;
+const Avatar = styled.img`
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
+  margin-right: 1rem;
 `;
 
 const Info = styled.div`
@@ -45,13 +46,10 @@ const Comments = () => (
   <>
     <Card>
       <User>
-        <Avatar>
-          <StaticImage
-            src="./../images/review-meg.jpg"
-            alt="Meg"
-            placeholder="blurred"
-          />
-        </Avatar>
+        <Avatar
+          src={reviewMeg}
+          alt="Meg"
+        />
         <Info>
           <Username>Meg</Username>
           <Source
@@ -69,13 +67,10 @@ const Comments = () => (
     </Card>
     <Card>
       <User>
-        <Avatar>
-          <StaticImage
-            src="./../images/review-whitts.jpg"
-            alt="Whitts"
-            placeholder="blurred"
-          />
-        </Avatar>
+        <Avatar
+          src={reviewWhitts}
+          alt="Whitts"
+        />
         <Info>
           <Username>Whitts</Username>
           <Source
@@ -93,13 +88,10 @@ const Comments = () => (
     </Card>
     <Card>
       <User>
-        <Avatar>
-          <StaticImage
-            src="./../images/review-petra.jpg"
-            alt="Petra"
-            placeholder="blurred"
-          />
-        </Avatar>
+        <Avatar
+          src={reviewPetra}
+          alt="Petra"
+        />
         <Info>
           <Username>Petra</Username>
           <Source

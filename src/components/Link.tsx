@@ -1,9 +1,8 @@
-import React from 'react';
 import styled from 'styled-components';
 import config from '../config';
 import { colors } from '../styles/variables';
 
-const Container = styled.div`
+const Container = styled.div<{ width?: string; }>`
   display: inline-block;
   width: ${props => props.width || undefined};
   text-align: center;
@@ -21,7 +20,13 @@ const Anchor = styled.a`
   font-weight: 500;
 `;
 
-const Link = ({ text, url, width }) => (
+type LinkProps = {
+  text: string,
+  url: string,
+  width?: string,
+}
+
+const Link = ({ text, url, width }: LinkProps) => (
   <Container width={width}>
     <Anchor
       href={url}
@@ -33,11 +38,11 @@ const Link = ({ text, url, width }) => (
   </Container>
 );
 
-export const InstagramLink = ({ text }) =>
+export const InstagramLink = ({ text }: Pick<LinkProps, 'text'>) =>
   <Link text={text} url={config.IG_URL} />
 
-export const FacebookLink = ({ text }) =>
+export const FacebookLink = ({ text }: Pick<LinkProps, 'text'>) =>
   <Link text={text} url={config.FB_HOME_URL} />
 
-export const BookingLink = ({ text, width }) =>
+export const BookingLink = ({ text, width }: Pick<LinkProps, 'text' | 'width'>) =>
   <Link text={text} url={config.BOOKING_URL} width={width} />

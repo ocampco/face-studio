@@ -1,4 +1,3 @@
-import React from 'react';
 import Comments from './Comments';
 import styled from 'styled-components';
 import config from '../config';
